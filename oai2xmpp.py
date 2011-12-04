@@ -11,7 +11,6 @@ from lxml import etree
 import xmpp
 import httplib2
 
-
 ns = {
         'oai': 'http://www.openarchives.org/OAI/2.0/',
         'oai_dc': 'http://www.openarchives.org/OAI/2.0/oai_dc/',
@@ -19,12 +18,12 @@ ns = {
      }
 
 default_poll_interval = 60 * 10 # seconds
-user_agent = 'oai2xmpp - http://inkdroid.org/bzr/currents/oai2xmpp.py'
+user_agent = 'oai2xmpp - http://github.com/edsu/currents/'
 
 seen = anydbm.open('oai2xmpp.db', 'c')
 
 def get_password():
-    return file('/home/ed/.currents').read().strip()
+    return file('/home/ed/.oai2xmpp').read().strip()
 
 def list_records(base_url, from_dt=None, rtoken=None, set=set):
     # determine appropriate request url 

@@ -1,4 +1,4 @@
-currents will poll an oai-pmh server and funnel new records over xmpp. 
+oai2xmpp will poll an oai-pmh server and funnel new records over xmpp. 
 Basic usage is:
 
     oai2xmpp.py http://www.doaj.org/oai.article from@example.com to@example.org
@@ -21,8 +21,8 @@ You will need to install xmppy and lxml to get this working properly:
     easy_install lxml
     easy_install httplib2
 
-Then you'll need to store the password for from@jabber.org in ~/.currents Just a
-plain text file with only the password will do.
+Then you'll need to store the password for from@jabber.org in ~/.oai2xmpp Just 
+a plain text file with only the password will do.
 
 TODO
 ----
