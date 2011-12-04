@@ -12,6 +12,9 @@ will give the set of options to tweak, such as the poll interval to use,
 , datetime to start looking for records from (defaults to now), a set to 
 limit records from, etc.
 
+Installation
+------------
+
 You will need to install xmppy and lxml to get this working properly:
 
     easy_install xmppy
@@ -21,11 +24,15 @@ You will need to install xmppy and lxml to get this working properly:
 Then you'll need to store the password for from@jabber.org in ~/.currents Just a
 plain text file with only the password will do.
 
-Comments, questions to: Ed Summers <ehs@pobox.com>
-
-TODO:
+TODO
+----
 
 - pubsub (xep-0060)
 - current awareness bot
 - manager for polling a set of oai-pmh targets
 - make the harvester more event driven (twisted?)
+
+Author
+------
+
+Ed Summers [ehs@pobox.com](mailto:ehs@pobox.com)
